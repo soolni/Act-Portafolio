@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* GRILLA */
+
+* {box-sizing: border-box;}	
+
+.row::after {content: ""; clear: both; display: table;}
+
+[class*="col-"] {float: left;} 
+
+.col-1 {width: 8.33%;}	
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}	
+.col-4 {width: 33.33%;}	
+.col-5 {width: 41.66%;}	
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}	
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+.container {
+    position: relative;
+    display: inline-block;
+    text-align: center;
+}
+
+.centrado {
+    justify-content: center;
+    text-align: center;
+}
+
+.separador {
+    padding-left: 5%;
+    padding-top: 5%;
+}
+
+.derecha {
+    padding-right: 5%;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+/* ESTILO GENERAL */
+body {
+    padding: 0;
+    margin: 0;
+    background-color: white;
+    font-family: 'Barlow', sans-serif;
+}
+
+a {
+    color: #E34088;
+    font-weight: 500;
+    font-style: italic;
+    text-decoration: none;
+}
+
+a:hover {
+    background-color: #E34088;
+    color: white;
+
+}
+
+/* ESTILO DEL MENU */
+div.menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #58C1DF;
+}
+
+div.menu li {
+    float: left;
+}
+
+div.menu li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 16px 22px;
+    text-decoration: none;
+    font-family: 'Barlow', sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    font-style: normal;
+}
+
+div.menu li a:hover {
+    background-color: white;
+    color: #58C1DF;
+}
+
+div.menu li a.active {
+    background-color: white;
+    color: #E34088;
+}
+
+div.menu li a.activeHome {
+    color: #E34088;
+    font-weight: 800;
+}
+
+#footer {
+    background-color: #58C1DF;
+    padding: 2px;
+    color: white;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/* PORTADA */
+
+.contenedorPortada {
+    position: relative;
+}
+
+#videoP {
+    width: 100%;
+    height: auto;
+}
+
+#mensaje {
+    position: absolute;
+    color: white;
+    padding: 15%;
+}
+
+div#mensaje h1 {
+    text-align: center;
+    font-weight: 700;
+    font-size: 50px;
+    font-style: italic;
+}
+.textencima {
+    position: absolute;
+    color: white;
+    top: 30%;
+    left: 50%;
+    padding: 20%;
+    transform: translate(-50%, -50%);
+}
+/* FOOTER */
+div#footer h4 {
+    font-weight: 400;
+    font-size: 0.75em;
+}
+
+
+
